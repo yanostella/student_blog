@@ -1,4 +1,6 @@
 import express from 'express';
+import 'reflect-metadata';
+import './config/data-source';
 
 const app = express();
 app.use(express.json());

@@ -17,5 +17,5 @@ export const AppDataSource = new DataSource({
 });
 
 AppDataSource.initialize()
-    .then(() => console.log('Database connected'))
+    .then(() => console.log(`Database connected on port ${process.env.DB_PORT}`))
     .catch((error) => console.log('Error connecting to database', error));
